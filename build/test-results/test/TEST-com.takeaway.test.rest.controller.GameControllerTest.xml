@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.takeaway.test.rest.controller.GameControllerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-06-23T05:40:02" hostname="JavierGbt.local" time="0.214">
+  <properties/>
+  <testcase name="whenCallApiStartNewGameWithoutParameters_thenReturnNewGame" classname="com.takeaway.test.rest.controller.GameControllerTest" time="0.2"/>
+  <testcase name="whenCallApiStartNewGame_thenReturnNewGame" classname="com.takeaway.test.rest.controller.GameControllerTest" time="0.013"/>
+  <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.5.RELEASE)
+
+00:40:01.885 [Test worker] INFO  c.t.t.r.c.GameControllerTest - Starting GameControllerTest on JavierGbt.local with PID 53564 (started by javierbenavides in /Users/javierbenavides/Downloads/reactive/takeaway -test)
+00:40:01.886 [Test worker] INFO  c.t.t.r.c.GameControllerTest - No active profile set, falling back to default profiles: default
+00:40:02.462 [Test worker] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+00:40:02.918 [Test worker] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+00:40:02.919 [Test worker] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+00:40:02.924 [Test worker] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+00:40:02.940 [Test worker] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: startNewGameByPlayerAUsingGET_1
+00:40:02.956 [Test worker] INFO  c.t.t.r.c.GameControllerTest - Started GameControllerTest in 1.094 seconds (JVM running for 12.758)
+00:40:03.024 [DefaultMessageListenerContainer-1] INFO  c.t.t.m.PlayerBTurnListener -  >>  player B Turn play: PlayMessage(gameId=HDjKRCjkuc, gameType=AUTOMATIC, playTurn=PlayTurn(inputNumber=52, player=PLAYERB, action=null))
+00:40:03.032 [DefaultMessageListenerContainer-1] INFO  c.t.t.m.PlayerATurnListener -  >>  player A Turn play: PlayMessage(gameId=HDjKRCjkuc, gameType=AUTOMATIC, playTurn=PlayTurn(inputNumber=17, player=PLAYERA, action=null))
+00:40:03.039 [DefaultMessageListenerContainer-1] INFO  c.t.t.m.PlayerBTurnListener -  >>  player B Turn play: PlayMessage(gameId=HDjKRCjkuc, gameType=AUTOMATIC, playTurn=PlayTurn(inputNumber=5, player=PLAYERB, action=null))
+Cancel game inputNumber[52] size[3]
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /game/start
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8"]
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.takeaway.test.rest.controller.GameController
+           Method = public com.takeaway.test.rest.response.GameResponse com.takeaway.test.rest.controller.GameController.startNewGameByPlayerA(java.util.Optional<java.lang.Integer>,java.util.Optional<com.takeaway.test.domain.GameType>)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json;charset=UTF-8"]
+     Content type = application/json;charset=UTF-8
+             Body = {"game":{"gameId":"HDjKRCjkuc","gameType":"AUTOMATIC","originalInput":52,"playTurn":{"inputNumber":52,"player":"PLAYERB"},"activeGame":true,"playsOfTheGame":[]},"turnsPlayer":["http://localhost/game/play/turn/HDjKRCjkuc/PLAYERB?action=MINUS","http://localhost/game/play/turn/HDjKRCjkuc/PLAYERB?action=ZERO","http://localhost/game/play/turn/HDjKRCjkuc/PLAYERB?action=PLUS"]}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /game/start
+       Parameters = {gameType=[MANUAL], inputNumber=[56]}
+          Headers = [Content-Type:"application/json;charset=UTF-8"]
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.takeaway.test.rest.controller.GameController
+           Method = public com.takeaway.test.rest.response.GameResponse com.takeaway.test.rest.controller.GameController.startNewGameByPlayerA(java.util.Optional<java.lang.Integer>,java.util.Optional<com.takeaway.test.domain.GameType>)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json;charset=UTF-8"]
+     Content type = application/json;charset=UTF-8
+             Body = {"game":{"gameId":"nHKzoHMnRC","gameType":"MANUAL","originalInput":56,"playTurn":{"inputNumber":56,"player":"PLAYERB"},"activeGame":true,"playsOfTheGame":[]},"turnsPlayer":["http://localhost/game/play/turn/nHKzoHMnRC/PLAYERB?action=MINUS","http://localhost/game/play/turn/nHKzoHMnRC/PLAYERB?action=ZERO","http://localhost/game/play/turn/nHKzoHMnRC/PLAYERB?action=PLUS"]}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

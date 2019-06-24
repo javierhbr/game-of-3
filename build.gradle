@@ -1,0 +1,50 @@
+import org.gradle.api.tasks.wrapper.Wrapper
+
+plugins {
+	id 'org.springframework.boot' version '2.1.5.RELEASE'
+	id 'java'
+}
+
+apply plugin: 'io.spring.dependency-management'
+
+group = 'com.takeaway'
+version = '0.0.1'
+sourceCompatibility = '1.8'
+
+bootJar {
+	baseName = 'takeaway-challenge'
+	version =  '0.0.1'
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-activemq'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.apache.commons:commons-lang3:3.7'
+	implementation 'com.google.guava:guava:28.0-jre'
+	implementation 'com.fasterxml.jackson.core:jackson-databind:2.9.9'
+	implementation 'com.google.guava:guava:28.0-jre'
+	implementation 'com.hazelcast:hazelcast'
+	implementation 'com.hazelcast:hazelcast-spring'
+	implementation ("io.springfox:springfox-swagger2:2.9.2")
+	implementation ("io.springfox:springfox-swagger-ui:2.9.2")
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'org.powermock:powermock-module-junit4:2.0.2'
+	testImplementation 'org.powermock:powermock-api-mockito2:2.0.2'
+}
+
+task wrapper(type: Wrapper) {
+	gradleVersion = '4.7'
+}
+
+test {
+	useJUnit()
+	testLogging {
+		events "PASSED", "STARTED", "FAILED", "SKIPPED"
+	}
+}

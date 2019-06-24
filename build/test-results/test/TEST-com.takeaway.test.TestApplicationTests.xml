@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.takeaway.test.TestApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-06-23T05:39:58" hostname="JavierGbt.local" time="0.194">
+  <properties/>
+  <testcase name="whenContextLoads_thenAllBeanCreated" classname="com.takeaway.test.TestApplicationTests" time="0.194"/>
+  <system-out><![CDATA[00:39:50.920 [Test worker] DEBUG o.s.t.c.j.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.takeaway.test.TestApplicationTests]
+00:39:50.927 [Test worker] DEBUG o.s.t.c.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+00:39:50.934 [Test worker] DEBUG o.s.t.c.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+00:39:50.950 [Test worker] DEBUG o.s.t.c.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.takeaway.test.TestApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+00:39:50.962 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.takeaway.test.TestApplicationTests], using SpringBootContextLoader
+00:39:50.965 [Test worker] DEBUG o.s.t.c.s.AbstractContextLoader - Did not detect default resource location for test class [com.takeaway.test.TestApplicationTests]: class path resource [com/takeaway/test/TestApplicationTests-context.xml] does not exist
+00:39:50.965 [Test worker] DEBUG o.s.t.c.s.AbstractContextLoader - Did not detect default resource location for test class [com.takeaway.test.TestApplicationTests]: class path resource [com/takeaway/test/TestApplicationTestsContext.groovy] does not exist
+00:39:50.966 [Test worker] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.takeaway.test.TestApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+00:39:51.009 [Test worker] DEBUG o.s.t.c.s.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.takeaway.test.TestApplicationTests]
+00:39:51.127 [Test worker] DEBUG o.s.b.t.c.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.takeaway.test.TestApplicationTests]: using defaults.
+00:39:51.128 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+00:39:51.142 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5221c6b8, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@40a26db3, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2a743863, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@83160a7, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5479631f, org.springframework.test.context.transaction.TransactionalTestExecutionListener@76543d6, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@c59d479, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@f6ea90d, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@10104264, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3d46d843, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7ffe298e, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@522d1bd]
+00:39:51.145 [Test worker] DEBUG o.s.t.a.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.takeaway.test.TestApplicationTests]
+00:39:51.145 [Test worker] DEBUG o.s.t.a.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.takeaway.test.TestApplicationTests]
+00:39:51.146 [Test worker] DEBUG o.s.t.a.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.takeaway.test.TestApplicationTests]
+00:39:51.146 [Test worker] DEBUG o.s.t.a.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.takeaway.test.TestApplicationTests]
+00:39:51.150 [Test worker] DEBUG o.s.t.c.s.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@5a17a415 testClass = TestApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@4be5f2ca testClass = TestApplicationTests, locations = '{}', classes = '{class com.takeaway.test.TakeawayChallengeApplication, class com.takeaway.test.TakeawayChallengeApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3a4468f2, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@22cdc987, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@58d5aa86, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@4f40cc78], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+00:39:51.151 [Test worker] DEBUG o.s.t.a.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.takeaway.test.TestApplicationTests]
+00:39:51.151 [Test worker] DEBUG o.s.t.a.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.takeaway.test.TestApplicationTests]
+00:39:51.176 [Test worker] DEBUG o.s.t.c.s.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.5.RELEASE)
+
+00:39:51.647 [Test worker] INFO  c.t.t.TestApplicationTests - Starting TestApplicationTests on JavierGbt.local with PID 53564 (started by javierbenavides in /Users/javierbenavides/Downloads/reactive/takeaway -test)
+00:39:51.650 [Test worker] INFO  c.t.t.TestApplicationTests - No active profile set, falling back to default profiles: default
+00:39:53.616 [Test worker] INFO  c.h.i.AddressPicker - [LOCAL] [dev] [3.11.4] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+00:39:53.631 [Test worker] INFO  c.h.i.AddressPicker - [LOCAL] [dev] [3.11.4] Picked [192.168.0.103]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+00:39:53.648 [Test worker] INFO  c.h.system - [192.168.0.103]:5701 [dev] [3.11.4] Hazelcast 3.11.4 (20190509 - d5ad9d4) starting at [192.168.0.103]:5701
+00:39:53.648 [Test worker] INFO  c.h.system - [192.168.0.103]:5701 [dev] [3.11.4] Copyright (c) 2008-2019, Hazelcast, Inc. All Rights Reserved.
+00:39:53.648 [Test worker] INFO  c.h.i.Node - [192.168.0.103]:5701 [dev] [3.11.4] A non-empty group password is configured for the Hazelcast member. Starting with Hazelcast version 3.8.2, members with the same group name, but with different group passwords (that do not use authentication) form a cluster. The group password configuration will be removed completely in a future release.
+00:39:54.009 [Test worker] INFO  c.h.s.i.o.i.BackpressureRegulator - [192.168.0.103]:5701 [dev] [3.11.4] Backpressure is disabled
+00:39:54.505 [Test worker] INFO  c.h.i.Node - [192.168.0.103]:5701 [dev] [3.11.4] Creating MulticastJoiner
+00:39:54.667 [Test worker] INFO  c.h.s.i.o.i.OperationExecutorImpl - [192.168.0.103]:5701 [dev] [3.11.4] Starting 4 partition threads and 3 generic threads (1 dedicated for priority tasks)
+00:39:54.671 [Test worker] INFO  c.h.i.d.Diagnostics - [192.168.0.103]:5701 [dev] [3.11.4] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+00:39:54.678 [Test worker] INFO  c.h.c.LifecycleService - [192.168.0.103]:5701 [dev] [3.11.4] [192.168.0.103]:5701 is STARTING
+00:39:56.708 [Test worker] INFO  c.h.i.c.ClusterService - [192.168.0.103]:5701 [dev] [3.11.4] 
+
+Members {size:1, ver:1} [
+	Member [192.168.0.103]:5701 - 7386de9a-d7e9-4624-b8cc-7da7ad337c52 this
+]
+
+00:39:56.733 [Test worker] INFO  c.h.c.LifecycleService - [192.168.0.103]:5701 [dev] [3.11.4] [192.168.0.103]:5701 is STARTED
+00:39:57.412 [Test worker] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+00:39:58.220 [Test worker] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+00:39:58.238 [Test worker] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+00:39:58.301 [Test worker] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+00:39:58.432 [Test worker] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: startNewGameByPlayerAUsingGET_1
+00:39:58.511 [Test worker] INFO  o.a.a.b.BrokerService - Using Persistence Adapter: MemoryPersistenceAdapter
+00:39:58.532 [JMX connector] INFO  o.a.a.b.j.ManagementContext - JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+00:39:58.661 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.15.9 (localhost, ID:JavierGbt.local-64853-1561268398534-0:1) is starting
+00:39:58.667 [Test worker] INFO  o.a.a.b.BrokerService - Apache ActiveMQ 5.15.9 (localhost, ID:JavierGbt.local-64853-1561268398534-0:1) started
+00:39:58.667 [Test worker] INFO  o.a.a.b.BrokerService - For help or more information please see: http://activemq.apache.org
+00:39:58.700 [Test worker] INFO  o.a.a.b.TransportConnector - Connector vm://localhost started
+00:39:58.751 [Test worker] INFO  c.t.t.TestApplicationTests - Started TestApplicationTests in 7.566 seconds (JVM running for 8.554)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

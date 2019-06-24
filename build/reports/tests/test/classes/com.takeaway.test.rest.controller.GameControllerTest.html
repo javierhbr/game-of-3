@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.takeaway.test.rest.controller.GameControllerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.takeaway.test.rest.controller.GameControllerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.takeaway.test.rest.controller.html">com.takeaway.test.rest.controller</a> &gt; GameControllerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.213s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">whenCallApiStartNewGameWithoutParameters_thenReturnNewGame</td>
+<td class="success">0.200s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">whenCallApiStartNewGame_thenReturnNewGame</td>
+<td class="success">0.013s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.5.RELEASE)
+
+00:40:01.885 [Test worker] INFO  c.t.t.r.c.GameControllerTest - Starting GameControllerTest on JavierGbt.local with PID 53564 (started by javierbenavides in /Users/javierbenavides/Downloads/reactive/takeaway -test)
+00:40:01.886 [Test worker] INFO  c.t.t.r.c.GameControllerTest - No active profile set, falling back to default profiles: default
+00:40:02.462 [Test worker] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity&lt;springfox.documentation.spring.web.json.Json&gt; springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+00:40:02.918 [Test worker] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+00:40:02.919 [Test worker] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+00:40:02.924 [Test worker] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+00:40:02.940 [Test worker] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: startNewGameByPlayerAUsingGET_1
+00:40:02.956 [Test worker] INFO  c.t.t.r.c.GameControllerTest - Started GameControllerTest in 1.094 seconds (JVM running for 12.758)
+00:40:03.024 [DefaultMessageListenerContainer-1] INFO  c.t.t.m.PlayerBTurnListener -  &gt;&gt;  player B Turn play: PlayMessage(gameId=HDjKRCjkuc, gameType=AUTOMATIC, playTurn=PlayTurn(inputNumber=52, player=PLAYERB, action=null))
+00:40:03.032 [DefaultMessageListenerContainer-1] INFO  c.t.t.m.PlayerATurnListener -  &gt;&gt;  player A Turn play: PlayMessage(gameId=HDjKRCjkuc, gameType=AUTOMATIC, playTurn=PlayTurn(inputNumber=17, player=PLAYERA, action=null))
+00:40:03.039 [DefaultMessageListenerContainer-1] INFO  c.t.t.m.PlayerBTurnListener -  &gt;&gt;  player B Turn play: PlayMessage(gameId=HDjKRCjkuc, gameType=AUTOMATIC, playTurn=PlayTurn(inputNumber=5, player=PLAYERB, action=null))
+Cancel game inputNumber[52] size[3]
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /game/start
+       Parameters = {}
+          Headers = [Content-Type:&quot;application/json;charset=UTF-8&quot;]
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.takeaway.test.rest.controller.GameController
+           Method = public com.takeaway.test.rest.response.GameResponse com.takeaway.test.rest.controller.GameController.startNewGameByPlayerA(java.util.Optional&lt;java.lang.Integer&gt;,java.util.Optional&lt;com.takeaway.test.domain.GameType&gt;)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:&quot;application/json;charset=UTF-8&quot;]
+     Content type = application/json;charset=UTF-8
+             Body = {&quot;game&quot;:{&quot;gameId&quot;:&quot;HDjKRCjkuc&quot;,&quot;gameType&quot;:&quot;AUTOMATIC&quot;,&quot;originalInput&quot;:52,&quot;playTurn&quot;:{&quot;inputNumber&quot;:52,&quot;player&quot;:&quot;PLAYERB&quot;},&quot;activeGame&quot;:true,&quot;playsOfTheGame&quot;:[]},&quot;turnsPlayer&quot;:[&quot;http://localhost/game/play/turn/HDjKRCjkuc/PLAYERB?action=MINUS&quot;,&quot;http://localhost/game/play/turn/HDjKRCjkuc/PLAYERB?action=ZERO&quot;,&quot;http://localhost/game/play/turn/HDjKRCjkuc/PLAYERB?action=PLUS&quot;]}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /game/start
+       Parameters = {gameType=[MANUAL], inputNumber=[56]}
+          Headers = [Content-Type:&quot;application/json;charset=UTF-8&quot;]
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.takeaway.test.rest.controller.GameController
+           Method = public com.takeaway.test.rest.response.GameResponse com.takeaway.test.rest.controller.GameController.startNewGameByPlayerA(java.util.Optional&lt;java.lang.Integer&gt;,java.util.Optional&lt;com.takeaway.test.domain.GameType&gt;)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:&quot;application/json;charset=UTF-8&quot;]
+     Content type = application/json;charset=UTF-8
+             Body = {&quot;game&quot;:{&quot;gameId&quot;:&quot;nHKzoHMnRC&quot;,&quot;gameType&quot;:&quot;MANUAL&quot;,&quot;originalInput&quot;:56,&quot;playTurn&quot;:{&quot;inputNumber&quot;:56,&quot;player&quot;:&quot;PLAYERB&quot;},&quot;activeGame&quot;:true,&quot;playsOfTheGame&quot;:[]},&quot;turnsPlayer&quot;:[&quot;http://localhost/game/play/turn/nHKzoHMnRC/PLAYERB?action=MINUS&quot;,&quot;http://localhost/game/play/turn/nHKzoHMnRC/PLAYERB?action=ZERO&quot;,&quot;http://localhost/game/play/turn/nHKzoHMnRC/PLAYERB?action=PLUS&quot;]}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 4.7</a> at Jun 23, 2019 12:40:08 AM</p>
+</div>
+</div>
+</body>
+</html>

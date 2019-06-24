@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.takeaway.test.domain.GameTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2019-06-23T05:40:01" hostname="JavierGbt.local" time="0.686">
+  <properties/>
+  <testcase name="whenCreateNewGameWithValues_thenReturnGameObject" classname="com.takeaway.test.domain.GameTest" time="0.282"/>
+  <testcase name="whenCreateNewGameWithNullInputNumber_thenReturnGameObject" classname="com.takeaway.test.domain.GameTest" time="0.001"/>
+  <testcase name="whenCreateNewGameWithNullInputNumberAndGameType_thenReturnGameObject" classname="com.takeaway.test.domain.GameTest" time="0.0"/>
+  <testcase name="whenPlayAndGameIsInActive_thenThrowsNoActiveGameException" classname="com.takeaway.test.domain.GameTest" time="0.003"/>
+  <testcase name="whenPlayMoveActionZeroWithManualGame_thenCompletedWithOutWinner" classname="com.takeaway.test.domain.GameTest" time="0.001"/>
+  <testcase name="whenPlayMoveAutomaticActionRandomZero_thenCompletedWithOutWinner" classname="com.takeaway.test.domain.GameTest" time="0.388"/>
+  <testcase name="whenPlayMoveAutomaticActionRandomPlus_thenCompletedWithOutWinner" classname="com.takeaway.test.domain.GameTest" time="0.001"/>
+  <testcase name="whenPlayMoveAutomaticActionRandomZeroMinus_thenCompletedWithOutWinner" classname="com.takeaway.test.domain.GameTest" time="0.002"/>
+  <testcase name="whenPlayMoveAutomaticActionRandomZero_thenCompletedWithWinner" classname="com.takeaway.test.domain.GameTest" time="0.002"/>
+  <testcase name="whenPlayMoveManualActionZero_thenCompletedWithWinner" classname="com.takeaway.test.domain.GameTest" time="0.001"/>
+  <testcase name="whenCancelGame_thenChangeGameToInActive" classname="com.takeaway.test.domain.GameTest" time="0.001"/>
+  <system-out><![CDATA[Cancel game inputNumber[53] size[0]
+playMove  isActiveGame game inputNumber[53] size[0]
+Cancel game inputNumber[53] size[0]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
