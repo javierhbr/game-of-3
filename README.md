@@ -20,7 +20,8 @@ If the game it's automatic, the loop of sends plays and processes them will work
 
 There are other better options  
 ##### Others options:
-- Using a  simple REST endpoints an save the status on a DB any type 
+- Using a simple REST endpoints an save the status on a DB
+- If the game needs to support high concurrency, we can use a non-blocking approach like AKKA or Reactive programming to handler the backpressure. And change replaces ActiveMQ for RabbitMQ or Kafka. If we are on AWS kinesis it's a good option too.   
  
   
 #### Disclaimer:
@@ -201,7 +202,5 @@ Manual Game and random input number:
 
 ### Known issues
 - One unit test its randomly failing, I haven't time to fix it.
-- There is no validation in the if the player plays more than once consecutively.   
-
 
 
